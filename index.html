@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>Share Your Idea</title>
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+
+  <body>
+
+    <div class="title-description">
+      <h1 id="title">Hi there, our Awesome Coworker!</h1>
+      <p id="description">
+        We’re on the lookout for some fantastic ideas, and you’ve got the chance to share yours with us right now.<br>
+        If your idea is chosen, we’ll make it happen—just think, your brilliance could become a reality!<br>
+        Can’t wait to see what magic you come up with!<br>
+        <span class="deadline">We accept ideas till 2030.12.12</span>
+      </p>
+    </div>
+
+    <form id="survey-form">
+
+      <fieldset id="personal-info">
+      
+        <label for="name" id="name-label">
+          Name: <input value="name" id="name" type="text" placeholder="Enter your name" required /> 
+        </label>
+
+        <label for="email" id="email-label">
+          Email: <input value="email" id="email" type="email" placeholder="Enter your email" required />
+        </label>
+        
+        <label value="number" for="number" id="number-label">
+          Age: (optional) <input id="number" type="number" placeholder="Enter your age" min="18" max="120" required />
+        </label>
+
+      </fieldset>
+
+      <fieldset id="work-info">
+
+        What is your role in the team?
+        <label for="role">
+          <select value="role" id="dropdown" required>
+            <option>select current role</option>
+            <option>Front-End Developer</option>
+            <option>Back-End Developer</option>
+            <option>Full-stack Developer</option>
+            <option>UX/UI Designer</option>
+          </select>
+        </label>
+
+        What is your current level of experience?
+        <div class="level">
+          <label for="junior">
+            <input value="junior" id="junior" name="level-of-experience" type="radio" /> Junior
+          </label>
+
+          <label for="medior">
+            <input value="medior" id="medior" name="level-of-experience" type="radio" /> Medior
+          </label>
+
+          <label for="senior">
+            <input value="senior" id="senior" name="level-of-experience" type="radio" /> Senior
+          </label>
+        </div>
+
+      </fieldset>
+
+      <fieldset id="idea-info">
+
+        <label for="idea">
+          Here is your chance to tell us about your idea!
+          <textarea id="idea" value="idea">
+          </textarea>
+        </label>
+
+      </fieldset>
+
+      <fieldset>
+
+        <label for="agreement">
+          <input value="agreement" id="agreement" type="checkbox" required /> I agree that my idea will be shared publicly.
+        </label>
+
+        <label for="agreement">
+          <input value="agreement" id="agreement" type="checkbox" required /> I swear that my idea is not against <a href="https://www.youtube.com/">company policy</a>.
+        </label>
+
+      </fieldset>
+
+        <input id="submit" type="submit" value="Submit" />
+      
+    </form>
+  </body>
+
+  <footer>
+
+    <p>
+    From The Best Company To The Best Coworkers<br>
+    You Share It - We Make It<br>
+    You can check all the ideas <a href="https://www.youtube.com/">here</a>
+    </p>
+
+  </footer>
+
+</html>
